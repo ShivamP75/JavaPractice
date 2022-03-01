@@ -11,20 +11,26 @@ public class WaveArray {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        int[] arr1 = partitions(arr,0,n-1);
-        System.out.println(Arrays.toString(arr1));
+        waveArray(arr);
+        System.out.println(Arrays.toString(arr));
     }
-    public static int[] partitions(int[] arr, int l , int r){
-        int pivot = arr[r];
-        int i = l;
-        for (int j = l; j < arr.length; j++) {
-            if(arr[j] < pivot){
-                int temp = arr[j];
-                arr[j] = arr[i];
-                arr[i] = temp;
-                i++;
-            }
-        }
-        return arr;
+
+    public static void waveArray(int[] arr) {
+        Arrays.sort(arr);
+//        int i = 0;
+//        while(i<arr.length-1){
+//            swap(arr,i,i+1);
+//            i = i+2;
+//
+//        }
+        int mid = arr.length/2;
+        System.out.println(mid);
+
+    }
+
+    public static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 }
