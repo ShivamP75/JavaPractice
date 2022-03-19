@@ -35,7 +35,9 @@ public class MergeSort {
             res[0] = arr[start];
             return res;
         }
+
         int mid = (start+end)/2;
+
         int[] lArr = merge(arr,start, mid);
         int[] rArr = merge(arr,mid+1, end);
         return mergeTwoSortedArray(lArr, rArr);

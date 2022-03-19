@@ -12,7 +12,7 @@ public class LongestSubArray {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println(lenOfLongSubarr(arr, n, 0));
+        System.out.println(lenOfLongSubarr(arr, n, k));
     }
 
     private static int lenOfLongSubarr(int[] arr, int n, int k) {

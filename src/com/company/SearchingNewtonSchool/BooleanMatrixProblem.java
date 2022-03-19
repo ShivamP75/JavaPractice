@@ -14,7 +14,10 @@ public class BooleanMatrixProblem {
                 boolean flag = false;
                 for (int k = 0; k < n; k++) {
                     int res = sc.nextInt();
-                    if(res == 1) flag = true;
+                    if(res == 1) {
+                        flag = true;
+                        break;
+                    }
 
 //                    twoDArray[j][k] = sc.nextInt();
                 }
