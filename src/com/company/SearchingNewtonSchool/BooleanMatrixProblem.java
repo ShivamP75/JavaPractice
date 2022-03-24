@@ -40,13 +40,21 @@ public class BooleanMatrixProblem {
     private static void booleanMatrixProblem(int[][] twoDArray, int m, int n) {
         for (int i = 0; i < m; i++) {
             boolean flag = false;
+            /*
+
+         i = 0 -->    1 0 0 0
+                      0 0 0 0
+             */
             for (int j = 0; j <n ; j++) {
-                if(twoDArray[i][j] == 1) flag = true;
+                if(twoDArray[i][j] == 1) {
+                    flag = true;
+                    break;
+                }
             }
             if(flag){
                 for (int j = 0; j <n ; j++) {
-                    twoDArray[i][j] = 1;
-                    System.out.print(twoDArray[i][j] + " ");
+//                    twoDArray[i][j] = 1;
+                    System.out.print(1 + " ");
                 }
             }
             else{
@@ -57,6 +65,5 @@ public class BooleanMatrixProblem {
             System.out.println();
 
         }
-
     }
 }

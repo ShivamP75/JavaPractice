@@ -8,13 +8,13 @@ public class LeaderBoard {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        Stack<Integer> s = new Stack<>();
+        Stack<Long> s = new Stack<>();
         for (int i = 0; i < n; i++) {
             if(s.isEmpty()){
-                s.push(sc.nextInt());
+                s.push(sc.nextLong());
             }
             else{
-                int newInt = sc.nextInt();
+                Long newInt = sc.nextLong();
                 if(s.peek() == newInt){
                     continue;
                 }
